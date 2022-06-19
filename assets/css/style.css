@@ -102,6 +102,13 @@ header nav ul li a {
     list-style: none;
 }
 
+.work li h3, .work li p {
+    background-color: #3d5a80;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .work li:hover {
     transform: scale(1.05);
 }
@@ -125,6 +132,10 @@ header nav ul li a {
 
 .run-buddy {
     background-image:url(../images/runbuddy.png);
+}
+
+.robot-gladiators {
+    background-image: url(../images/robotgladiators.png);
 }
 
 .placeholder {
