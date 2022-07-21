@@ -138,6 +138,9 @@ header nav ul li a {
     background-image: url(../images/robotgladiators.png);
 }
 
+.diy-bartender {
+    background: url(../images/diy-bartender.png);
+}
 .placeholder {
     background-image:url(../images/placeholder.png);
 }
