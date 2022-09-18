@@ -141,6 +141,11 @@ header nav ul li a {
 .diy-bartender {
     background: url(../images/diy-bartender.png);
 }
+
+.hospitium {
+    background: url(../images/hospitium.png);
+}
+
 .placeholder {
     background-image:url(../images/placeholder.png);
 }
