@@ -1,83 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Tyler Rodgers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
-
   <body>
-    <header>
-      <h2>Tyler Rodgers</h2>
+    <div class="container my-5">
+      <h1>Tyler Rodgers</h1>
+      <a href="mailto:tyler.rodgers74@gmail.com" type="button" class="btn btn-outline-primary">
+        tyler.rodgers74@gmail.com
+      </a>
+      <p class="lead">Enjoys Development, Aspiring Junior Web Dev</p>
+    </div>
+
+    <div class="container">
       <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
           </li>
-          <li>
-            <a href="#work">Work</a>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
           </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
 
-    <section class="about-me" id="about-me">
-      <h2>About Me</h2>
-      <p>
-        I am a 22 year old part-time student, working a full time job. I have
-        always had a desire to learn to code but have never followed through.
-        After a recent career transition, I have a taken a step back and decided
-        to full devote myself to learning how to code.
-      </p>
-    </section>
+    <div class="container mt-5" id="about">
+      <div class="row">
+        <div class="col">
+          <h3 class="mb-3">Work Experience</h3>
+          <div class="card mb-3">
+            <div class="card-body">
+             <div class="mx-3">
+              <h4>Example Text</h4>
+              <div><strong>20XX-20XX</strong></div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut repellendus autem ducimus ipsum placeat fugiat nesciunt possimus veniam quam minima accusamus dolorem fuga laboriosam blanditiis, voluptatem vel distinctio! Quo, nisi?
+             </div>
+             <ul class="list-group list-group-flush mt-2">
+              <li class="list-group-item">Example Text</li>
+              <li class="list-group-item">Example Text</li>
+              <li class="list-group-item">Example Text</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h3 class="mb-3">Skills</h3>
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="mx-3">
+                <h4>Front End</h4>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="mx-3">
+                <h4>Back End</h4>
+                <ul>
+                  <li>NodeJS</li>
+                  <li>API's</li>
+                  <li>Express</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <section class="work" id="work">
-      <h2>Work</h2>
-      <ul>
-        <a href="https://tsrodgers.github.io/run-buddy/" target="_blank"
-          ><li class="run-buddy work-content">
-            <h3>Run Buddy</h3>
-            <p>HTML/CSS</p>
-          </li></a
-        >
-        <a href="https://tsrodgers.github.io/robot-gladiators/" target="_blank"
-          ><li class="robot-gladiators work-content2">
-            <h3>Robot Gladiators</h3>
-            <p>JavaScript</p>
-          </li></a
-        >
-        <a href="" target="git@github.com:TSRodgers/portfolio.git"
-          ><li class="diy-bartender work-content2">
-            <h3>DIY Bartender</h3>
-            <p>HTML/Tailwind CSS/Javascript/API</p>
-          </li></a
-        >
-        <a href="https://hospitium.herokuapp.com/" target="_blank"
-          ><li class="hospitium work-content2">
-            <h3>hospitium</h3>
-            <p>HTML/Materialize CSS/JS/API/Heroku/mySQL/Handlebars</p>
-          </li></a
-        >
-        <a href="" target="_blank"
-          ><li class="placeholder work-content2">
-            <h3>Coming Soon</h3>
-            <p>N/A</p>
-          </li></a
-        >
-      </ul>
-    </section>
+    <div class="container mt-5" id="portfolio">
+      <h3>Previous Projects</h3>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card mb-3">
+            <img src="./assets/images/hospitium.png" alt="Hospitium" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Hospitium</h5>
+              <p class="card-text">HTML/Materialize CSS/API's/Express/mySQL/Handlebars</p>
+              <a href="https://hospitium.herokuapp.com/" type="button" class="btn btn-primary">
+                View Website
+              </a>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-3">
+            <div class="card mb-3">
+              <img src="./assets/images/diy-bartender.png" alt="diy-bartender" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">DIY-Bartender</h5>
+                <p class="card-text">HTML/Tailwind CSS/JavaScript/API's</p>
+                <a href="https://parariot.github.io/DIY-Bartender/" type="button" class="btn btn-primary">
+                  View Website
+                </a>
+              </div>
+            </div>
+         </div>
+          <div class="col-lg-3">
+            <div class="card mb-3">
+              <img src="./assets/images/runbuddy.png" alt="Run Buddy" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Run Buddy</h5>
+                <p class="card-text">HTML/CSS</p>
+                <a href="https://tsrodgers.github.io/run-buddy/" type="button" class="btn btn-primary">
+                  View Website
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card mb-3">
+              <img src="./assets/images/robotgladiators.png" alt="Robot Gladiators" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Robot Gladiators</h5>
+                <p class="card-text">JavaScript</p>
+                <a href="https://tsrodgers.github.io/robot-gladiators/" type="button" class="btn btn-primary">
+                  View Website
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
 
-    <footer>
-      <h2 class="contact-me" id="contact-me">Contact Me</h2>
-      <ul>
-        <li>(919) 413-3545</li>
-        <li>tyler.rodgers74@gmail.com</li>
-        <li>Github: TSRodgers</li>
-      </ul>
-    </footer>
+    <div class="container my-5">
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
